@@ -1,10 +1,8 @@
 const findTheOldest = function(people) {
-
     oldest = people[0];
     oldestAge = calcAge(people[0]);
 
     for (let i = 1; i < people.length; i++) {
-        
         personAge = calcAge(people[i]);
 
         if (personAge > oldestAge) {
@@ -14,7 +12,6 @@ const findTheOldest = function(people) {
     }
 
     return oldest;
-    
 };
 
 
@@ -26,11 +23,6 @@ function calcAge(person) {
     }
 
     return yod - person.yearOfBirth;
-}
-
-main();
-function main() {
-    findTheOldest("F");
 }
 
 // Do not edit below this line
